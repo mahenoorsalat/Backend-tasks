@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import cors from "cors"
 import express from "express"
 import connectDB from "./config/db.js";
@@ -14,6 +13,9 @@ connectDB()
 
 app.use('/api/tasks' , router)
 
+
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
+
+
